@@ -1,0 +1,75 @@
+.container{
+    padding: 50px;
+    margin-top: 5px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeeaea;
+    border-radius: 10px;
+    height: 750px;
+}
+.input-group-text{
+    background-color: #f8eeee;
+}
+.para{
+    text-align: center;
+}
+.line-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .line-container::before,
+  .line-container::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .line-container:not(:empty)::before {
+    margin-right: 10px;
+  }
+
+  .line-container:not(:empty)::after {
+    margin-left: 10px;
+  }
+
+  .line-container span {
+    color: #555;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  select{
+    border: 1px solid rgba(199, 196, 196, 0.5);
+    color: rgba(97, 95, 95, 0.9);
+    border-radius: 5px;
+    width: 358px;
+  }
+  .btn{
+    width: 400px;
+    transform: scale(1);
+  }
+  .custom-animation {
+    animation: backInDown 5s;    
+    animation-delay: 0.5s;
+}
+.btn:hover{
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
+.option1{
+  text-align: center;
+}
+@media screen and (max-width:480px) {
+  .container{
+    width: 400px;
+  }
+  .btn{
+    width: 300px;
+  }
+  select{
+    width: 250px;
+  }
+}
